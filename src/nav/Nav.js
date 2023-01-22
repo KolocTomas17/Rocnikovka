@@ -38,6 +38,7 @@ const Nav = () => {
         <a className="navbar-item" href="#">
           Testimonials
         </a>
+
       </div>
       <div className="navbar-item">
         <div className="field has-addons">
@@ -66,12 +67,15 @@ const Nav = () => {
                 />
               </svg>
             </button>
+
           </div>
         </div>
-      </div>
+      </div>            
     </div>
   </div>
 </nav>
+
+
 
     
 
