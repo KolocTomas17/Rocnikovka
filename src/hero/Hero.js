@@ -1,11 +1,12 @@
-import Fog from '../img/fog.jpg';
+
+import '../hero/Hero.css';
 
 const Hero = () => {
   return (    
-    <div className="hero is-small">
+    <div className="hero is-medium">
       <div className="hero-body">
         <div className="container has-text-centered">
-         <img src={Fog} className='image'></img>
+          <h1 className='title'>AutobazarPro</h1>
         </div>
         
       </div>

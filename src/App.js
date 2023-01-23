@@ -11,7 +11,6 @@ function App() {
       <>
         
         <Nav></Nav>
-        <Title></Title>
         <Hero></Hero>
         <Side></Side>
       </>

@@ -1,4 +1,4 @@
-
+import Logo from '../img/logo.png';
 
 const Nav = () => {
     return(
@@ -8,9 +8,9 @@ const Nav = () => {
       <a className="navbar-item" href="#">
         <img
           className="image"
-          src="https://bulma.io/images/bulma-logo.png"
+          src={Logo}
           alt=""
-          width="96px"
+          width="110px"
         />
       </a>
       <a
@@ -27,19 +27,28 @@ const Nav = () => {
     <div className="navbar-menu">
       <div className="navbar-start">
         <a className="navbar-item" href="#">
-          About
+          Koupě
         </a>
         <a className="navbar-item" href="#">
-          Company
+          Financování
         </a>
         <a className="navbar-item" href="#">
-          Services
+          Kariéra
         </a>
         <a className="navbar-item" href="#">
-          Testimonials
+          O Nás
         </a>
-
       </div>
+
+      <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Zaregistrovat se
+            </a>
+            <a class="navbar-item is-active">
+              Přihlásit se
+            </a>
+        </div>
+
       <div className="navbar-item">
         <div className="field has-addons">
           <div className="control">

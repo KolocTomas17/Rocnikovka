@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+
+.hero-body {
+    background: url('../img/fog.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+.title {
+    color: black;
+    cursor: default;
+}
