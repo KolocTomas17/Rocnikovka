@@ -1,5 +1,6 @@
 import Card from "../content/Card";
 import Tank from "../img/Tank.jpg";
+import'../side/Side.css'
 
 const Side = () => {
   return (
@@ -8,10 +9,39 @@ const Side = () => {
 
       <div className="columns">
         <div className="column">
-          <div className="column is-three-fifth">is-one-fifth</div>
-          <div className="column is-three-fifth">is-one-fifth</div>
-          <div className="column is-three-fifth">is-one-fifth</div>
-          <div className="column is-three-fifth">is-one-fifth</div>
+        <div className="navbar-item">
+        <div className="field has-addons">
+          <div className="control">
+            <input
+              className="input"
+              type="search"
+              placeholder="Zadej ročník auta"
+              aria-label="Search"
+            />
+          </div>
+          <div className="control">
+            <button className="button" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                style={{ width: 24, height: 24 }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>  
+
+          
         </div>
         <div className="column">
           <div className="column">

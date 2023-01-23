@@ -46,7 +46,7 @@ const Nav = () => {
             <input
               className="input"
               type="search"
-              placeholder="Search"
+              placeholder="BMW, Audi..."
               aria-label="Search"
             />
           </div>
