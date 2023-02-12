@@ -1,21 +1,35 @@
-import './App.css';
-import Nav from './nav/Nav';
-import Hero from './hero/Hero';
-import Side from './side/Side';
-import Title from './title/Title';
+import React from 'react';
+
+
+import Logreg from "./login/Logreg";
+import Onas from "./content/Onas"
+import Domu from "./Nav";
+import Finanovani from './content/Financovani';
+import { Route, Routes } from "react-router-dom";
+import "./login/Logreg.css";
+
+
+
 
 
 function App() {
+ 
+
   return (
-      
-      <>
-        
-        <Nav></Nav>
-        <Hero></Hero>
-        <Side></Side>
-      </>
+    <>
+    <Routes>
+      <Route exact index element ={<Domu />} />
+      <Route path="/financovani" element={<Finanovani />} />
+      <Route path="/prihlaseni" element={<Logreg />} /> 
+      <Route path="/Onas" element={<Onas />} />
+  </Routes>
+
+
+    
+    </>
 
   );
 }
+
 
 export default App;
