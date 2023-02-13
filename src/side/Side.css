@@ -6,6 +6,7 @@
     text-align: center;
 }
 
-#Koupit {
-    padding-top: 80px;
+.karta {
+    display: flex;
 }
+

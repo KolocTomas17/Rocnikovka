@@ -1,6 +1,6 @@
 import Tank from "../img/Tank.jpg";
 
-const Card = [
+const Card2 = [
   {
     id:1,
     nazev: "Tank",
@@ -28,4 +28,4 @@ const Card = [
 ] 
 
 
-export default Card;
+export default Card2;
