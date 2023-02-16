@@ -26,7 +26,8 @@ const Card = [
     cena: 1250000,
     mena: "CZK",
     odkaz: Bmwm1
-  }
+  },
+  
 ] 
 
 
