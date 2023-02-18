@@ -1,24 +1,13 @@
-import React, { useState } from "react";
-import { Login } from "./Login.jsx";
-import { Register } from "./Register.jsx";
-import Logo from "../img/logo.png";
+
+import  Logo  from "../img/logo.png";
+import Worker from "../img/worker.png";
+import "../content/Content.css"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import  "../login/Logreg.css";
 
-
-
-
-
-const Logreg = () => {
-  const [currentForm, setCurrentForm] = useState('login');
-
-  const toggleForm = (forName) => {
-    setCurrentForm(forName);
-  }
-
+const Kariera = () => {
   return (
     <>
-        <nav className="navbar py-4 navbar is-fixed-top ">
+        <nav className="navbar py-4 navbar is-fixed-top">
       <div className="container is-fluid">
         <div className="navbar-brand">
           <a className="navbar-item" href="#">
@@ -103,31 +92,66 @@ const Logreg = () => {
       </div>
       
     </nav>
-    <div className="app" >
-      {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      }
-    </div>
 
-
-      </>
-
-      
-
+    <section className="hero is-white is-fullheight aaa">
+      <div className="hero-body ">
+        <div className="container ">
+          <div className="columns  is-vcentered reverse-columns ">
+            <div
+              className="column
+    is-10-mobile 
+    is-10-tablet 
+    is-5-desktop 
+    is-5-widescreen 
+    is-5-fullhd 
+    kariera"
+              data-aos="fade-down"
+            >
+                
+              <h1 className="title titled is-1 mb-6 ">
+                Proč pracovat zrovna u Nás?
+              </h1>
+              <div className="Text">
+              <p>Nabízíme nejlepší pracovní podmínky</p>
+              <p>Vstupní příspěvek 10 000Kč</p>
+              <p>Firemní auto</p>
+              <p>Nástupní plat 32 000Kč</p>
+              <p>Možnost stravování v naší jídelně</p>
+              <p>Dovolená až 25 dnů do ročně</p>
+                </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              className="column
+    is-10-mobile 
+    is-10-tablet 
+    is-4-desktop 
+    is-7-widescreen 
+    is-4-fullhd is-offset-1-fullhd"
+            >
+              <figure className="image is-square">
+                <img src={Worker} />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
-}
+};
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    );
+  }
 
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
-
-export default Logreg;
+export default Kariera;
