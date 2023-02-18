@@ -10,7 +10,7 @@ const Side = () => {
   const listItems = Card.map((item) => (
     <div className="colums ">
       <div className="column is-10 ">
-        <div className="card is-shady ">
+        <div className="card is-shady col">
           <div className="card-image">
             <figure className="image is-5by4">
               <img src={item.odkaz} />
@@ -19,7 +19,10 @@ const Side = () => {
           <div className="card-content">
             <div className="content">
               <h4>{item.nazev}</h4>
-              <p>{item.popisek}</p>
+              <p>{item.p1}</p>
+              <p>{item.p2}</p>
+              <p>{item.p3}</p>
+              <p>{item.p4}</p>
               
                 <span
                 className="button is-link modal-button"
@@ -36,7 +39,11 @@ const Side = () => {
       </div>
     </div>
     
+
+
+    
   ));
+  
   const listItems2 = Card2.map((item) => (
   <div className="colums ">
     <div className="column is-10 ">
@@ -50,6 +57,8 @@ const Side = () => {
           <div className="content">
             <h4>{item.nazev}</h4>
             <p>{item.popisek}</p>
+
+
             <span
               className="button is-link modal-button"
               data-target="modal-image2"
@@ -66,6 +75,7 @@ const Side = () => {
   
   
 ));
+
 
   
   return (
@@ -155,8 +165,10 @@ const Side = () => {
       </div>
       
     </nav>
-    <div className="karta">{listItems}</div>
-    <div className="karta">{listItems2}</div>
+    <div className="karta ">{listItems}</div>
+    <div className="karta ">{listItems2}</div>
+    
+    
     </>
 
    );
