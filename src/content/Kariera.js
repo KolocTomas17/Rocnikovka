@@ -118,6 +118,11 @@ const Kariera = () => {
               <p>Nástupní plat 32 000Kč</p>
               <p>Možnost stravování v naší jídelně</p>
               <p>Dovolená až 25 dnů do ročně</p>
+              <br></br>
+              <ul>
+                <CustomLink className="button is-link" to="/Onas">Napište nám</CustomLink>
+              </ul>
+              
                 </div>
             </div>
             <div

@@ -2,6 +2,7 @@
 
 
 import { FaFacebook, FaInstagram ,FaLinkedin } from "react-icons/fa";
+import Map from "../content/Map";
 import  Logo  from "../img/logo.png"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "../content/Content.css"
@@ -103,8 +104,11 @@ const Onas = () => {
     <div className="container has-text-centered">
       <div className="columns is-8 is-variable ">
         <div className="column is-two-thirds has-text-left">
+          
           <h1 className="title is-1">Kde nás najít</h1>
+          
           <p className="is-size-4">
+            
             
           </p>
           <div className="social-media">
@@ -134,10 +138,14 @@ const Onas = () => {
             </a>
             
           </div>
+          <div className="Map">
+             <Map></Map>
+          </div>
         </div>
         
+        
         <div className="column is-one-third has-text-left">
-          <h1 className="title is-1">Zeptejte se nás</h1>
+          <h1 className="title is-1">Napište nám</h1>
           <div className="field">
             <label className="label">Jméno</label>
             <div className="control">

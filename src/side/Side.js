@@ -19,10 +19,9 @@ const Side = () => {
           <div className="card-content">
             <div className="content">
               <h4>{item.nazev}</h4>
-              <p>{item.p1}</p>
-              <p>{item.p2}</p>
-              <p>{item.p3}</p>
-              <p>{item.p4}</p>
+              <p>{item.popisek}</p>
+
+
               
                 <span
                 className="button is-link modal-button"
