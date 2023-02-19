@@ -1,18 +1,20 @@
 import Card from "../content/Card";
 import Card2 from "../content/Card2";
 
+
 import Logo from "../img/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 import "../side/Side.css";
 
 const Side = () => {
+
   const listItems = Card.map((item) => (
     <div className="colums ">
       <div className="column is-10 ">
         <div className="card is-shady col">
           <div className="card-image">
-            <figure className="image is-5by4">
+            <figure className="image is-5by4" key={item.id}>
               <img src={item.odkaz} />
             </figure>
           </div>
@@ -48,7 +50,7 @@ const Side = () => {
     <div className="column is-10 ">
       <div className="card is-shady ">
         <div className="card-image">
-          <figure className="image is-5by4">
+          <figure className="image is-5by4" >
             <img src={item.odkaz} />
           </figure>
         </div>
@@ -133,11 +135,12 @@ const Side = () => {
           <div className="navbar-item">
             <div className="field has-addons">
               <div className="control">
-                <input
+               <input
                   className="input"
                   type="search"
                   placeholder="BMW, Audi..."
                   aria-label="Search"
+                  
                 />
               </div>
               <div className="control">

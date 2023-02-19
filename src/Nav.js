@@ -4,7 +4,9 @@ import "../src/App.css";
 import Hero from "./hero/Hero";
 import Side from "./side/Side";
 
+
 export default function Nav() {
+
   return (
     <>
     
@@ -62,12 +64,16 @@ export default function Nav() {
           <div className="navbar-item">
             <div className="field has-addons">
               <div className="control">
-                <input
+              <input
                   className="input"
                   type="search"
                   placeholder="BMW, Audi..."
                   aria-label="Search"
+                  
                 />
+                  
+                  
+                
               </div>
               <div className="control">
                 <button className="button" >
@@ -94,7 +100,7 @@ export default function Nav() {
       
     </nav>
     <Hero></Hero>
-  <Side></Side>
+    <Side></Side>
 </>
   );
 
