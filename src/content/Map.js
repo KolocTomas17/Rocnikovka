@@ -6,9 +6,9 @@ const Map = () => {
 <div className="mapouter">
   <div className="gmap_canvas">
     <iframe
-      width={450}
-      height={450}
-      id="gmap_canvas"
+      className="map"
+      width="450"
+      height="410"
       src="https://maps.google.com/maps?q=Mlad%C3%A1%20Boleslav%20Jilemnick%C3%A9ho%201119&t=&z=13&ie=UTF8&iwloc=&output=embed"
     />
    
