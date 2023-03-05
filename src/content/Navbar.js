@@ -12,7 +12,7 @@ function Navbar() {
       setActive("nav__menu nav__active");
     } else setActive("nav__menu");
 
-    // Icon Toggler
+    // zobrazi burger
     if (icon === "nav__toggler") {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
@@ -34,20 +34,29 @@ function Navbar() {
           </a>
       <ul className={active}>
         <div className="navbar-start">
-          <ul className="navbar-item polozky">
-              <CustomLink to="/Koupit">Koupit</CustomLink>
+          <ul className="navbar-item ">
+              <CustomLink to="/Koupit" className="polozky">Koupit</CustomLink>
             </ul>
             <ul className="navbar-item">
-              <CustomLink to="/Financovani">Financování</CustomLink>
+              <CustomLink to="/Financovani" className="polozky">Financování</CustomLink>
             </ul>
             <ul className="navbar-item">
-              <CustomLink to="/Kariera">Kariéra</CustomLink>
+              <CustomLink to="/Kariera" className="polozky">Kariéra</CustomLink>
             </ul>
 
             <ul className="navbar-item">
-              <CustomLink to="/Onas">O nás</CustomLink>
+              <CustomLink to="/Onas" className="polozky">O nás</CustomLink>
             </ul>
+            
           </div>
+          
+          <div className="navbar-end"> 
+          <ul className="navbar-item">
+            <CustomLink to="/Prihlaseni" className="polozky">Přihlásit se</CustomLink>
+          </ul>
+          </div>
+          
+          
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>

@@ -3,14 +3,15 @@
 *::before {
   margin: 0;
   box-sizing: border-box;
+  
 }
 html {
   font-size: 62.5%;
+  
 }
 body {
   font-size: 1.6rem;
 }
-
 
 
 
@@ -20,12 +21,12 @@ body {
 
 .nav__menu {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 3rem;
+  gap: 50rem;
+  
 }
 .nav__toggler {
   display: none;
+  
 }
 .nav__toggler div {
   width: 2.5rem;
@@ -33,6 +34,7 @@ body {
   margin: 0.4rem;
   background: rgb(204, 204, 204);
   transition: 0.3s ease-in;
+  
 }
 
 @media screen and (max-width: 1023px) {
@@ -50,6 +52,9 @@ body {
     background: rgb(255, 255, 255);
     transform: translateY(-100%);
     transition: 0.5s ease-out;
+    gap: 1rem;
+    display: block;
+    
   }
 }
 /* Active Class */
@@ -67,4 +72,8 @@ body {
 }
 .toggle .line2 {
   transform: rotate(45deg) translate(-1px, -4px);
+}
+
+.polozky {
+  color: black;
 }

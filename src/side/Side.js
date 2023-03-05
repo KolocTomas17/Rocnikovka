@@ -1,6 +1,7 @@
 import Card from "../content/Card";
 import Card2 from "../content/Card2";
 import Navbar from "../content/Navbar";
+import Footer from "../footer/Footer";
 
 import "../side/Side.css";
 
@@ -43,6 +44,7 @@ const Side = () => {
   ));
   
   const listItems2 = Card2.map((item) => (
+    
   <div className="colums ">
     <div className="column is-10 ">
       <div className="card is-shady ">
@@ -69,6 +71,7 @@ const Side = () => {
         </div>
       </div>
     </div>
+    
   </div>
   
   
@@ -81,7 +84,7 @@ const Side = () => {
     <Navbar></Navbar>
     <div className="karta ">{listItems}</div>
     <div className="karta ">{listItems2}</div>
-    
+    <Footer></Footer>
     
     </>
 

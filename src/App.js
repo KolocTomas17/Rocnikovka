@@ -9,6 +9,7 @@ import Koupit from './side/Side';
 import Kariera from './content/Kariera';
 import { Route, Routes } from "react-router-dom";
 import "./login/Logreg.css";
+import Napis from './content/Napis';
 
 
 
@@ -21,11 +22,12 @@ function App() {
     <>
     <Routes>
       <Route exact index element ={<Domu />} />
-      <Route path="/financovani" element={<Finanovani />} />
-      <Route path="/prihlaseni" element={<Logreg />} /> 
+      <Route path="/Financovani" element={<Finanovani />} />
+      <Route path="/Prihlaseni" element={<Logreg />} /> 
       <Route path="/Onas" element={<Onas />} />
       <Route path="/Koupit" element={<Koupit />} />
       <Route path="/Kariera" element={<Kariera />} />
+      <Route path="/NapisteNam" element={<Napis />} />
   </Routes>
 
 

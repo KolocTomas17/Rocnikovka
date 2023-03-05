@@ -4,6 +4,7 @@ import Worker from "../img/worker.png";
 import "../content/Content.css"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "../footer/Footer";
 
 const Kariera = () => {
   const [search, setSearch] = useState("");
@@ -39,7 +40,7 @@ const Kariera = () => {
               <p>Dovolená až 25 dnů do ročně</p>
               <br></br>
               <ul>
-                <CustomLink className="button is-link" to="/Onas">Napište nám</CustomLink>
+                <CustomLink className="button is-link" to="/NapisteNam">Napište nám</CustomLink>
               </ul>
               
                 </div>
@@ -61,6 +62,9 @@ const Kariera = () => {
         </div>
       </div>
     </section>
+
+    <Footer></Footer>
+    
     </>
   );
 };

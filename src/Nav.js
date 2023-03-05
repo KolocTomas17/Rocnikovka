@@ -3,7 +3,7 @@ import "../src/App.css";
 import Hero from "./hero/Hero";
 import Side from "./side/Side";
 import Navbar from "./content/Navbar";
-
+import Footer from "./footer/Footer";
 
 export default function Nav() {
 
@@ -15,6 +15,7 @@ export default function Nav() {
     
     <Hero></Hero>
     <Side></Side>
+    
     
 </>
   );
