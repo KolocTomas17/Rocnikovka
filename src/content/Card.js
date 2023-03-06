@@ -7,7 +7,7 @@ const Card = [
     id:1,
     nazev: "Tank T34-85 1942",
     popisek: "Tank T34-85 je velmi vhodný pro válečné nadšence. Spotřeba se neřeší. Maximální rychlost: Ano",
-    cena: 15000000,
+    cena: "15 000 000",
     mena: "CZK",
     odkaz: Tank
   },
@@ -15,7 +15,7 @@ const Card = [
     id:2,
     nazev: "Audi RS6 2017",
     popisek: "Ojeté 120000km, výbava: automatické parkování, hands free,  zadní světla LED,  AUX, rs6 packet",
-    cena: 1599000,
+    cena: "1 590 000",
     mena: "CZK",
     odkaz: Audirs6
   },
@@ -23,7 +23,7 @@ const Card = [
     id:3,
     nazev: "Bmw M1 2008",
     popisek: "Ojeté 20000km, výkon 300 koní, nafta, 6 stuňová manuální převodovka, STK není, BREMBO brzdy",
-    cena: 1250000,
+    cena: "1 250 000",
     mena: "CZK",
     odkaz: Bmwm1
   },

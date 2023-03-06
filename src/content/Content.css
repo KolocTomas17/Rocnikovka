@@ -31,3 +31,28 @@
         width: 400px;
     }
 }
+
+.con {
+    top: 25vh;
+    padding-bottom: 250px;
+}
+
+.btns {
+    color: black;
+}
+
+@media only screen and (max-width: 2560px) {
+    .footer {
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer {
+        margin-top: 5px;
+    }
+}
+
+
+
+
