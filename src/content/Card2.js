@@ -5,7 +5,7 @@ import Taycan from "../img/Taycan.png"
 
 const Card2 = [
   {
-    id:1,
+    id:4,
     nazev: "Mercedes 1990",
     popisek: "Mercedes-Benz 124 je vhodný pro lidi středního věku. Mezi hlavní výhody patří automatická převodovka, RWD s výkonem 160 koní, ABS.",
     cena: "200 000",
@@ -13,7 +13,7 @@ const Card2 = [
     odkaz: MB
   },
   {
-    id:2,
+    id:5,
     nazev: "Bentley 2020",
     popisek: "Bentley Continental GT se hodí pro luxusní sportovní jízdu s výkonem 549 koní, automatickou 8 stupňovou převodovkou, s pohonem všech kol. ",
     cena: "7 500 000",
@@ -21,7 +21,7 @@ const Card2 = [
     odkaz: Bentley
   },
   {
-    id:3,
+    id:6,
     nazev: "Porsche 2021",
     popisek: "Porsche Taycan je elektrické auto s výkonem 408 koní a automatickou převodovkou vhodný pro nadšene elektrických sportovních vozů.",
     cena: "2 200 000",

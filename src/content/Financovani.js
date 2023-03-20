@@ -21,8 +21,8 @@ const Finanovani = () => {
                     <div>
                       <h1 className="title post-title">Financování vozu</h1>
                       <p>
-                        Vozidlo můžete koupit přímo na naší pobočce nebo online
-                        v pohodlí vašeho domova. Vše za vás zařídíme. Stačí si k
+                        Vozidlo můžete zakoupit přímo na naší pobočce nebo po telefonu
+                        v pohodlí vašeho domova. Vše za Vás zařídíme. Stačí si k
                         nám přijet akorát pro klíčky a odjet.
                       </p>
                       <br />

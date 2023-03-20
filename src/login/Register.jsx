@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
@@ -20,9 +22,25 @@ export const Register = (props) => {
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="email@gmail.com" id="email" name="email" />
             <label htmlFor="password">Heslo</label>
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-            <button className="btn" type="submit">Zaregistrovat se</button>
+            <br/>
+                    <ul> 
+                        <CustomLink to="/" className="button">Přihlásit se</CustomLink>
+                    </ul>  
         </form>
         <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Máte zde již účet? Přihlašte se zde.</button>
     </div>
     )
 }
+
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    );
+  }
