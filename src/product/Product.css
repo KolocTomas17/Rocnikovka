@@ -1,0 +1,32 @@
+.pic {
+    padding-top: 15%;
+    display: block;
+}
+
+.tittle {
+   padding-top: 5px;
+   font-size: large;
+   color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+    .title {
+        margin-top: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .pic {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .tittle {
+        font-size: 19px;
+        display: flex;
+        justify-content: center;
+    }
+  }

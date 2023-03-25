@@ -3,10 +3,13 @@ import Card2 from "../content/Card2";
 import Card3 from "../content/Card3";
 import Navbar from "../content/Navbar";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
+
 
 import "../side/Side.css";
 
-const Side = () => {
+const Side = (props) => {
+  
   const listItems = Card.map((item) => (
     <div className="colums ">
       <div className="column is-10">
@@ -21,10 +24,14 @@ const Side = () => {
               <h4>{item.nazev}</h4>
 
               <p>{item.popisek}</p>
-
-              <span className="button modal-button" data-target="modal-image2">
-                Prohlédnout
-              </span>
+                  <li className="navbar-item">
+                        <button class="button">
+                          <Link to={`/Product/${item.id}`}>
+                            Prohlédnout
+                          </Link>
+                        </button>
+                      </li>
+              
               <br />
               <br />
               <h5>{item.cena + " " + item.mena}</h5>
@@ -49,9 +56,9 @@ const Side = () => {
               <h4>{item.nazev}</h4>
               <p>{item.popisek}</p>
 
-              <span className="button modal-button" data-target="modal-image2">
+              <button className="button modal-button">
                 Prohlédnout
-              </span>
+              </button>
               <br />
               <br />
               <h5>{item.cena + " " + item.mena}</h5>
@@ -76,9 +83,9 @@ const Side = () => {
               <h4>{item.nazev}</h4>
               <p>{item.popisek}</p>
 
-              <span className="button modal-button" data-target="modal-image2">
+              <button className="button modal-button">
                 Prohlédnout
-              </span>
+              </button>
               <br />
               <br />
               <h5>{item.cena + " " + item.mena}</h5>
@@ -99,5 +106,7 @@ const Side = () => {
     </>
   );
 };
+
+
 
 export default Side;

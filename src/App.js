@@ -10,6 +10,7 @@ import Kariera from './content/Kariera';
 import { Route, Routes } from "react-router-dom";
 import "./login/Logreg.css";
 import Napis from './content/Napis';
+import Product from "./product/Product";
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/Koupit" element={<Koupit />} />
       <Route path="/Kariera" element={<Kariera />} />
       <Route path="/NapisteNam" element={<Napis />} />
+      <Route path="/Product/1" element={<Product />} />
   </Routes>
 
 
