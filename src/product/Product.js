@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom";
-import Card from "../content/Card";
+import { Link } from "react-router-dom";
 import Navbar from "../content/Navbar";
 import Footer from "../footer/Footer";
 import Tank from "../img/Tank.png";
@@ -20,6 +19,7 @@ const Product = () => {
             <h4 className="title nadpis">Tank T34-85</h4>
             
             <p className="tittle">Poměr výkon/hmotnost: 16,2 hp/tunu</p>
+            <p className="tittle">Rok výroby: 1942</p>
             <p className="tittle">Hmotnost: 32 tun</p>
             <p className="tittle">Max. rychlost: 55 km/h</p>
             <p className="tittle">Kategorie: střední tank</p>
@@ -27,6 +27,9 @@ const Product = () => {
             <p className="tittle">Počet válců: 12</p>
             <p className="tittle">Kanón vz. 44</p>
             <p className="tittle">Dostřel: 14 000 metrů</p>
+            <p className="tittle">Cena: 15 000 000 CZK</p>
+            <br/>
+            <Link className="button" to="/NapisteNam">Mám zájem</Link>
             </div>
             
             

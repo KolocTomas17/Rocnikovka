@@ -23,7 +23,7 @@ const Card = [
     id:3,
     nazev: "Bmw M1 2008",
     popisek: "Najeto 20000km, výkon 300 koní s 6 stuňovou manuální převodovkou, 4x4, nafta, STK není.",
-    cena: "1 250 000",
+    cena: "1 050 000",
     mena: "CZK",
     odkaz: Bmwm1
   },

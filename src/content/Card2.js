@@ -1,12 +1,12 @@
 
-import MB from "../img/Screenshot_20221230_144351_Gallery-removebg-preview.png";
+import MB from "../img/MB.png";
 import Bentley from "../img/Bentley.png";
 import Taycan from "../img/Taycan.png"
 
 const Card2 = [
   {
     id:4,
-    nazev: "Mercedes 1990",
+    nazev: "Mercedes-Benz 124 1990",
     popisek: "Mercedes-Benz 124 je vhodný pro lidi středního věku. Mezi hlavní výhody patří automatická převodovka, RWD s výkonem 160 koní, ABS.",
     cena: "200 000",
     mena: "CZK",

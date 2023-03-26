@@ -26,7 +26,7 @@ const Side = (props) => {
               <p>{item.popisek}</p>
                   <li className="navbar-item">
                         <button class="button">
-                          <Link to={`/Product/${item.id}`}>
+                          <Link className="pro" to={`/Product/${item.id}`}>
                             Prohlédnout
                           </Link>
                         </button>
@@ -57,7 +57,9 @@ const Side = (props) => {
               <p>{item.popisek}</p>
 
               <button className="button modal-button">
-                Prohlédnout
+              <Link className="pro" to={`/Product/${item.id}`}>
+                            Prohlédnout
+                          </Link>
               </button>
               <br />
               <br />
@@ -84,7 +86,9 @@ const Side = (props) => {
               <p>{item.popisek}</p>
 
               <button className="button modal-button">
-                Prohlédnout
+              <Link className="pro" to={`/Product/${item.id}`}>
+                            Prohlédnout
+                          </Link>
               </button>
               <br />
               <br />
