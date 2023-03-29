@@ -16,6 +16,9 @@ import Product3 from "./product/Product3";
 import Product4 from "./product/Product4";
 import Product5 from "./product/Product5";
 import Product6 from "./product/Product6";
+import Product7 from "./product/Product7";
+import Product8 from "./product/Product8";
+import Product9 from "./product/Product9";
 
 
 
@@ -40,9 +43,9 @@ function App() {
       <Route path="/Product/4" element={<Product4 />} />
       <Route path="/Product/5" element={<Product5 />} />
       <Route path="/Product/6" element={<Product6 />} />
-      <Route path="/Product/7" element={<Product />} />
-      <Route path="/Product/8" element={<Product />} />
-      <Route path="/Product/9" element={<Product />} />
+      <Route path="/Product/7" element={<Product7 />} />
+      <Route path="/Product/8" element={<Product8 />} />
+      <Route path="/Product/9" element={<Product9 />} />
   </Routes>
 
 

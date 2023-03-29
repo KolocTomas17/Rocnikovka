@@ -14,7 +14,7 @@ const Card2 = [
   },
   {
     id:5,
-    nazev: "Bentley 2020",
+    nazev: "Bentley Continental gt 2020",
     popisek: "Bentley Continental GT se hodí pro luxusní sportovní jízdu s výkonem 549 koní, automatickou 8 stupňovou převodovkou, s pohonem všech kol. ",
     cena: "7 500 000",
     mena: "CZK",
@@ -22,7 +22,7 @@ const Card2 = [
   },
   {
     id:6,
-    nazev: "Porsche 2021",
+    nazev: "Porsche  Taycan 2021",
     popisek: "Porsche Taycan je elektrické auto s výkonem 408 koní a automatickou převodovkou vhodný pro nadšene elektrických sportovních vozů.",
     cena: "2 200 000",
     mena: "CZK",

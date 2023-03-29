@@ -1,4 +1,4 @@
-import { FaBold, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Map from "../content/Map";
 import "../content/Content.css";
 import Navbar from "./Navbar";

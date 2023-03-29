@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../content/Navbar.css";
 import  Logo  from "../img/logo.png"
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -35,24 +35,24 @@ function Navbar() {
       <ul className={active}>
         <div className="navbar-start">
           <ul className="navbar-item ">
-              <CustomLink to="/Koupit" className="polozky">Koupit</CustomLink>
+              <Link to="/Koupit" className="polozky">Koupit</Link>
             </ul>
             <ul className="navbar-item">
-              <CustomLink to="/Financovani" className="polozky">Financování</CustomLink>
+              <Link to="/Financovani" className="polozky">Financování</Link>
             </ul>
             <ul className="navbar-item">
-              <CustomLink to="/Kariera" className="polozky">Kariéra</CustomLink>
+              <Link to="/Kariera" className="polozky">Kariéra</Link>
             </ul>
 
             <ul className="navbar-item">
-              <CustomLink to="/Onas" className="polozky">O nás</CustomLink>
+              <Link to="/Onas" className="polozky">O nás</Link>
             </ul>
             
           </div>
           
           <div className="navbar-end"> 
           <ul className="navbar-item">
-            <CustomLink to="/Prihlaseni" className="polozky">Přihlásit se</CustomLink>
+            <Link to="/Prihlaseni" className="polozky">Přihlásit se</Link>
           </ul>
           </div>
           
@@ -67,17 +67,6 @@ function Navbar() {
   );
 }
 
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
 
 export default Navbar;

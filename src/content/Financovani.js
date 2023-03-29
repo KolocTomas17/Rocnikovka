@@ -1,7 +1,7 @@
 import Footer from "../footer/Footer";
 import Navbar from "./Navbar";
 import Img from "../img/marketing.jpg";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Finanovani = () => {
   return (
@@ -34,9 +34,9 @@ const Finanovani = () => {
                       <br />
                       <ul className="navbar-item">
                         <button class="button">
-                          <CustomLink to="/" className="btns">
+                          <Link to="/" className="btns">
                             Zpět na přehled
-                          </CustomLink>
+                          </Link>
                         </button>
                       </ul>
                     </div>
@@ -48,28 +48,11 @@ const Finanovani = () => {
         </div>
       </div>
      
-      <footer className="footer">
-      <div className="content has-text-centered is-fixed-bottom">
-        <p>
-          © 2023 <strong>AutobazarPro</strong> | Všechna práva vyhrazena
-        </p>
-      </div>
-    </footer>
+     <Footer></Footer>
     </>
   );
 };
 
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
 
 export default Finanovani;
