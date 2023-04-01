@@ -51,7 +51,7 @@ const Kariera = () => {
     is-4-fullhd is-offset-1-fullhd"
               >
                 <figure className="image is-square">
-                  <img src={Worker} />
+                  <img src={Worker} alt="pracovnik"/>
                 </figure>
               </div>
             </div>

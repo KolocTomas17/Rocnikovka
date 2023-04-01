@@ -1,6 +1,6 @@
 .pic {
-    padding-top: 15%;
-    display: block;
+  padding-top: 15%;
+  display: block;
 }
 
 .picture {
@@ -8,34 +8,57 @@
 }
 
 .tittle {
-   padding-top: 5px;
-   font-size: large;
-   color: black;
+  padding-top: 5px;
+  font-size: large;
+  color: black;
 }
 
-.asistenty{
+.asistenty {
   padding-top: 10%;
   padding-right: 20%;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .tlacitko {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-    .title {
-        margin-top: 20%;
-    }
+  .title {
+    margin-top: 20%;
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    .pic {
-        width: 80%;
-        display: flex;
-        margin: 0 auto;
-    }
+@media only screen and (max-width: 768px) {
+  .pic {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 150px;
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    .tittle {
-        font-size: 19px;
-        display: flex;
-        justify-content: center;
-    }
+@media only screen and (max-width: 768px) {
+  .tittle {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
   }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .popisek {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 80px;
+    align-items: center;
+  }
+}

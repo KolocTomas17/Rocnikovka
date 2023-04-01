@@ -14,8 +14,8 @@ const Card3 = [
   },
   {
     id:8,
-    nazev: "Lexus LS 220 2007",
-    popisek: "Lexus IS 220 220d Sport Line je starší sportovnější auto, které je vhodné i pro klidnou jízdu. Najeto 150 361km. Nebourané s výkonem 130kW. ",
+    nazev: "Lexus LS 220d 2007",
+    popisek: "Lexus IS 220d Sport Line je starší sportovnější auto, které je vhodné i pro klidnou jízdu. Najeto 150 361km. Nebourané s výkonem 130kW. ",
     cena: "250 000",
     mena: "CZK",
     odkaz: lexus

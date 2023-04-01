@@ -19,7 +19,7 @@ function Navbar() {
   };
   return (
     <nav className="navbar py-4 navbar is-fixed-top">
-       <a className="navbar-item" href="#">
+       <div className="navbar-item" href="#">
             <Link to="/">
               <ul>
                 <img
@@ -31,7 +31,7 @@ function Navbar() {
                 />
               </ul>
             </Link>
-          </a>
+          </div>
       <ul className={active}>
         <div className="navbar-start">
           <ul className="navbar-item ">
@@ -47,17 +47,22 @@ function Navbar() {
             <ul className="navbar-item">
               <Link to="/Onas" className="polozky">O nás</Link>
             </ul>
+
+            <ul className="navbar-item ">
+            <Link to="/Prihlaseni" className="polozky polozka">Přihlásit se</Link>
+          </ul>
             
           </div>
           
-          <div className="navbar-end"> 
-          <ul className="navbar-item">
-            <Link to="/Prihlaseni" className="polozky">Přihlásit se</Link>
-          </ul>
-          </div>
+          
           
           
       </ul>
+      
+      
+      
+      
+      
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
         <div className="line2"></div>

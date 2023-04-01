@@ -21,7 +21,6 @@ body {
 
 .nav__menu {
   display: flex;
-  gap: 50rem;
   
 }
 .nav__toggler {
@@ -41,8 +40,8 @@ body {
   .nav__toggler {
     display: block;
     cursor: pointer;
-    
   }
+
   .nav__menu {
     position: absolute;
     top: 7vh;
@@ -57,12 +56,12 @@ body {
     
   }
 }
-/* Active Class */
+
 .nav__active {
   transform: translateX(0%);
 }
 
-/* Toggle Icon Animation */
+
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-1px, 4px);
@@ -77,3 +76,7 @@ body {
 .polozky {
   color: black;
 }
+
+
+
+
