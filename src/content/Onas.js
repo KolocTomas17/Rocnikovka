@@ -3,6 +3,7 @@ import Map from "../content/Map";
 import "../content/Content.css";
 import Navbar from "./Navbar";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 
 const Onas = () => {
   return (
@@ -17,29 +18,29 @@ const Onas = () => {
 
                 <p className="is-size-4"></p>
                 <div className="social-media">
-                  <a
-                    href="https://facebook.com"
+                  <Link
+                    to="https://facebook.com"
                     target="_blank"
                     className="button is-light is-medium"
                   >
                     <FaFacebook />
-                  </a>
+                  </Link>
                   <> </>
-                  <a
-                    href="https://instagram.com"
+                  <Link
+                    to="https://instagram.com"
                     target="_blank"
                     className="button is-light is-medium"
                   >
                     <FaInstagram />
-                  </a>
+                  </Link>
                   <> </>
-                  <a
-                    href="https://cz.linkedin.com/"
+                  <Link
+                    to="https://cz.linkedin.com/"
                     target="_blank"
                     className="button is-light is-medium"
                   >
                     <FaLinkedin />
-                  </a>
+                  </Link>
                 </div>
                 <div className="Map">
                   <Map></Map>
@@ -47,7 +48,7 @@ const Onas = () => {
               </div>
 
               <div className="content">
-              <div class="column">
+              <div className="column">
                 <h1 className="title is-1">Kdo jsme?</h1>
                 <p className="is-size-5">Jsme autobazar <strong>AutobazarPro,</strong> který sídlí v Mladé Boleslavi již od roku 2010.</p>
                 <p className="is-size-5"> Společnost <strong>AutobazarPro</strong> se může prokázat svou špičkovou kvalitou všech vozů, které si u nás můžete zakoupit.</p>

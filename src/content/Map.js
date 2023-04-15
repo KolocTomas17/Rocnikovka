@@ -6,6 +6,7 @@ const Map = () => {
 <div className="mapouter">
   <div className="gmap_canvas">
     <iframe
+      title="map"
       className="map"
       width="450"
       height="410"

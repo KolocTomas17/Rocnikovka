@@ -16,7 +16,7 @@ const Side = (props) => {
         <div className="card is-shady ">
           <div className="card-image">
             <figure className="image is-5by4" key={item.id}>
-              <img src={item.odkaz} />
+              <img src={item.odkaz} alt={item.nazev}/>
             </figure>
           </div>
           <div className="card-content">
@@ -48,7 +48,7 @@ const Side = (props) => {
         <div className="card is-shady ">
           <div className="card-image">
             <figure className="image is-5by4">
-              <img src={item.odkaz} />
+              <img src={item.odkaz} alt={item.nazev}/>
             </figure>
           </div>
           <div className="card-content">
@@ -77,7 +77,7 @@ const Side = (props) => {
         <div className="card is-shady ">
           <div className="card-image">
             <figure className="image is-5by4">
-              <img src={item.odkaz} />
+              <img src={item.odkaz} alt={item.nazev}/>
             </figure>
           </div>
           <div className="card-content">
